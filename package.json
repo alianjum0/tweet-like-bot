@@ -1,0 +1,19 @@
+{
+  "name": "like-bot",
+  "version": "1.0.0",
+  "description": "like all tweets of a user",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "esm": "^3.2.25",
+    "moment": "^2.29.1",
+    "twitter-api-v2": "^1.9.1"
+  }
+}
