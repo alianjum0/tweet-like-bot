@@ -17,7 +17,7 @@ Installation
 
  - `git clone https://github.com/alianjum0/tweet-like-bot`
  - `npm install`
- - create a `.env` file (you must set `USER_ID` (Self user id), `FRIEND_USER_ID` (Friend user id) from [TweeterId](https://tweeterid.com),`CONSUMER_KEY`,`CONSUMER_SECRET`, `ACCESS_TOKEN, `ACCESS_SECRET`, `CHECK_MINUTES` and `SLACK_WEBHOOK_URL` from [Slack Webhooks](https://api.slack.com/incoming-webhooks) ) as shown in file [.env.example](/env.example)
+ - create a `.env` file (you must set `USER_ID` (Self user id), `FRIEND_USER_ID` (Friend user id) from [TweeterId](https://tweeterid.com),`CONSUMER_KEY`,`CONSUMER_SECRET`, `ACCESS_TOKEN, `ACCESS_SECRET`, `CHECK_MINUTES` and `SLACK_WEBHOOK_URL` from [Slack Webhooks](https://api.slack.com/incoming-webhooks) ) as shown in file [.env.example](/.env.example)
  This would assure that your keys are secured and index.js file is untouched.
  - `npm start` (run the app, and like all the recent tweets (test) and send slack webhook notification)
 
@@ -30,6 +30,13 @@ Deploying on Lambda
  - `aws lambda invoke --function-name tweet-like-bot --region eu-central-1 out
    --log-type Tail`
 
+Deploy to Lambda using Github Actions
+===============
+
+ - In Github Action "Set up a workflow yourself"
+ - Copy and paste code from [src/main.yml](/src/main.yml)
+ - Add `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` to Github Settings>Secrets>Actions
+ - Change `aws_region` and `function_name`
 
  Thanks
 =================
