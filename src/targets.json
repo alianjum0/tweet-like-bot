@@ -1,0 +1,6 @@
+[
+  {
+    "Id": "1", 
+    "Arn": "arn:aws:lambda:eu-central-1:849652647306:function:tweet-like-bot"
+  }
+]
