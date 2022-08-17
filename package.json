@@ -6,14 +6,23 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node -e \"console.log(import handler from './index'; handler({}));\"",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@slack/webhook": "^6.1.0",
     "dotenv": "^14.2.0",
-    "esm": "^3.2.25",
     "moment": "^2.29.1",
     "twitter-api-v2": "^1.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1"
   }
 }

@@ -1,3 +1,9 @@
+# Zip files
+*.zip
+
+# vim .swp files
+*.swp
+
 # Logs
 logs
 *.log
