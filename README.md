@@ -37,6 +37,7 @@ Deploy to Lambda using Github Actions
  - Copy and paste code from [src/main.yml](/src/main.yml)
  - Add `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` to Github Settings>Secrets>Actions
  - Change `aws_region` and `function_name`
+ - Commit and check pipeline in Github Actions
 
  Thanks
 =================
