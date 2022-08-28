@@ -77,7 +77,7 @@ async function main() {
 
     message = `${count} new tweet${count > 1 ? 's' : ''}.`
     if (process.env.SLACK_WEBHOOK_URL) {
-      sendSlackNotification(message)
+      await sendSlackNotification(message)
     }
   } else {
     message = 'No new tweets.'
